@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DropCheck - Planes y Precios</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+</head>
+<body class="bg-gray-100 text-gray-900">
+    <header class="bg-white shadow-md py-6">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <h1 class="text-2xl font-bold">DropCheck</h1>
+            <a href="index.html" class="bg-blue-600 text-white py-2 px-4 rounded-lg">Volver a Inicio</a>
+        </div>
+    </header>
+    
+    <section class="text-center py-12">
+        <h2 class="text-4xl font-bold">Elige tu plan ideal</h2>
+        <p class="text-lg mt-4 text-gray-700">Optimiza la validación de tus pedidos y reduce cancelaciones</p>
+    </section>
+    
+    <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+            <h3 class="text-2xl font-bold">Básico</h3>
+            <p class="text-3xl font-bold mt-2">USD 12.99/m</p>
+            <p class="text-gray-600">Facturado cada mes</p>
+            <ul class="mt-4 text-left list-disc pl-6">
+                <li>✅ Validación automática de pedidos</li>
+                <li>✅ Reportes básicos</li>
+                <li>✅ Soporte por email</li>
+            </ul>
+            <a href="#" class="mt-6 block bg-blue-600 text-white py-3 px-6 rounded-lg text-lg font-bold">Consigue el Plan Básico</a>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+            <h3 class="text-2xl font-bold">Plus</h3>
+            <p class="text-3xl font-bold mt-2">USD 13.99/m</p>
+            <p class="text-gray-600">Facturado cada mes</p>
+            <ul class="mt-4 text-left list-disc pl-6">
+                <li>✅ Todo en el plan Básico</li>
+                <li>✅ Reportes avanzados</li>
+                <li>✅ Integración con Shopify</li>
+            </ul>
+            <a href="#" class="mt-6 block bg-blue-600 text-white py-3 px-6 rounded-lg text-lg font-bold">Consigue el Plan Plus</a>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md text-center border-2 border-blue-600">
+            <h3 class="text-2xl font-bold text-blue-600">Más Popular</h3>
+            <h3 class="text-2xl font-bold">Completo</h3>
+            <p class="text-3xl font-bold mt-2">USD 14.99/m</p>
+            <p class="text-gray-600">Facturado cada mes</p>
+            <ul class="mt-4 text-left list-disc pl-6">
+                <li>✅ Todo en el plan Plus</li>
+                <li>✅ Protección avanzada contra fraudes</li>
+                <li>✅ Soporte 24/7</li>
+            </ul>
+            <a href="#" class="mt-6 block bg-blue-600 text-white py-3 px-6 rounded-lg text-lg font-bold">Consigue el Plan Completo</a>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+            <h3 class="text-2xl font-bold">Prime</h3>
+            <p class="text-3xl font-bold mt-2">USD 17.99/m</p>
+            <p class="text-gray-600">Facturado cada mes</p>
+            <ul class="mt-4 text-left list-disc pl-6">
+                <li>✅ Todo en el plan Completo</li>
+                <li>✅ API personalizada</li>
+                <li>✅ Soporte prioritario</li>
+            </ul>
+            <a href="#" class="mt-6 block bg-blue-600 text-white py-3 px-6 rounded-lg text-lg font-bold">Consigue el Plan Prime</a>
+        </div>
+    </div>
+    
+    <footer class="bg-gray-800 text-white text-center py-6 mt-12">
+        <p>© 2025 DropCheck. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
