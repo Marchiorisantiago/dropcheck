@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DropCheck - Reduce Cancelaciones y Maximiza Ganancias</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
 </head>
 <body class="bg-gradient-to-r from-blue-50 to-blue-100 text-gray-900 relative">
     <div class="absolute inset-0 bg-gradient-to-br from-blue-100 to-blue-300 opacity-30 rounded-full blur-3xl"></div>
     <!-- Header -->
     <header class="bg-white shadow-md py-6 relative z-10">
         <div class="container mx-auto flex justify-between items-center px-6">
-            <h1 class="text-2xl font-bold">DropCheck</h1>
+            <h1 class="text-2xl font-bold"><a href="index.html">DropCheck</a></h1>
             <a href="#cta" class="bg-blue-600 hover:bg-blue-700 text-white py-3 px-5 rounded-lg text-lg font-semibold">
                 🚀 Reduce Cancelaciones HOY
             </a>
@@ -27,37 +29,55 @@
         </a>
     </section>
 
-    <!-- Social Proof / Reviews -->
+    <!-- Reviews Carousel -->
     <section class="bg-white py-12 text-center relative z-10">
         <h3 class="text-3xl font-bold">Confían en Nosotros</h3>
         <p class="mt-2 text-gray-600">Más de 1,000 dropshippers ya optimizan sus pedidos con DropCheck</p>
-        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 mt-8 px-6">
-            <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-                <p class="text-gray-700 italic">"DropCheck redujo mis cancelaciones en un 40%. Un cambio total."</p>
-                <p class="mt-2 font-bold">- Juan M.</p>
+        <div class="swiper mySwiper mt-8">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide bg-gray-100 p-6 rounded-lg shadow-md flex flex-col items-center">
+                    <div class="flex items-center space-x-3">
+                        <img src="profile1.jpg" alt="Juan M." class="w-10 h-10 rounded-full">
+                        <p class="font-bold">Juan M.</p>
+                    </div>
+                    <div class="text-yellow-400 text-lg">★★★★★</div>
+                    <p class="text-gray-700 italic mt-2">"DropCheck redujo mis cancelaciones en un 40%. Un cambio total."</p>
+                </div>
+                <div class="swiper-slide bg-gray-100 p-6 rounded-lg shadow-md flex flex-col items-center">
+                    <div class="flex items-center space-x-3">
+                        <img src="profile2.jpg" alt="María G." class="w-10 h-10 rounded-full">
+                        <p class="font-bold">María G.</p>
+                    </div>
+                    <div class="text-yellow-400 text-lg">★★★★★</div>
+                    <p class="text-gray-700 italic mt-2">"Antes pasaba horas revisando pedidos. Ahora todo es automático."</p>
+                </div>
+                <div class="swiper-slide bg-gray-100 p-6 rounded-lg shadow-md flex flex-col items-center">
+                    <div class="flex items-center space-x-3">
+                        <img src="profile3.jpg" alt="Luis F." class="w-10 h-10 rounded-full">
+                        <p class="font-bold">Luis F.</p>
+                    </div>
+                    <div class="text-yellow-400 text-lg">★★★★★</div>
+                    <p class="text-gray-700 italic mt-2">"El mejor software para dropshippers que he probado. Fácil y rápido."</p>
+                </div>
             </div>
-            <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-                <p class="text-gray-700 italic">"Antes pasaba horas revisando pedidos. Ahora todo es automático."</p>
-                <p class="mt-2 font-bold">- María G.</p>
-            </div>
-            <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-                <p class="text-gray-700 italic">"El mejor software para dropshippers que he probado. Fácil y rápido."</p>
-                <p class="mt-2 font-bold">- Luis F.</p>
-            </div>
-            <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-                <p class="text-gray-700 italic">"Desde que uso DropCheck, mi tasa de éxito en envíos ha mejorado mucho."</p>
-                <p class="mt-2 font-bold">- Camila R.</p>
-            </div>
-            <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-                <p class="text-gray-700 italic">"Funciona a la perfección con mi tienda. Recomendado al 100%."</p>
-                <p class="mt-2 font-bold">- Pedro T.</p>
-            </div>
-            <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-                <p class="text-gray-700 italic">"La integración con Shopify ha sido clave para mejorar mis ventas."</p>
-                <p class="mt-2 font-bold">- Ana V.</p>
-            </div>
+            <div class="swiper-pagination mt-4"></div>
         </div>
     </section>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
 
     <!-- CTA -->
     <section id="cta" class="bg-blue-600 text-white text-center py-12 relative z-10">
