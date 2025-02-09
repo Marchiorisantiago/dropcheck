@@ -6,20 +6,21 @@
     <title>DropCheck - Planes y Precios</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
 </head>
-<body class="bg-gray-100 text-gray-900">
-    <header class="bg-white shadow-md py-6">
+<body class="bg-gradient-to-r from-blue-50 to-blue-200 text-gray-900 relative">
+    <div class="absolute inset-0 bg-gradient-to-br from-blue-100 to-blue-300 opacity-30 rounded-full blur-3xl"></div>
+    <header class="bg-white shadow-md py-6 relative z-10">
         <div class="container mx-auto flex justify-between items-center px-6">
             <h1 class="text-2xl font-bold">DropCheck</h1>
             <a href="index.html" class="bg-blue-600 text-white py-2 px-4 rounded-lg">Volver a Inicio</a>
         </div>
     </header>
     
-    <section class="text-center py-12">
+    <section class="text-center py-12 relative z-10">
         <h2 class="text-4xl font-bold">Elige tu plan ideal</h2>
         <p class="text-lg mt-4 text-gray-700">Optimiza la validación de tus pedidos y reduce cancelaciones</p>
     </section>
     
-    <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-6">
+    <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-6 relative z-10">
         <div class="bg-white p-6 rounded-lg shadow-md text-center">
             <h3 class="text-2xl font-bold">Básico</h3>
             <p class="text-3xl font-bold mt-2">USD 12.99/m</p>
@@ -67,7 +68,7 @@
         </div>
     </div>
     
-    <footer class="bg-gray-800 text-white text-center py-6 mt-12">
+    <footer class="bg-gray-800 text-white text-center py-6 mt-12 relative z-10">
         <p>© 2025 DropCheck. Todos los derechos reservados.</p>
     </footer>
 </body>
