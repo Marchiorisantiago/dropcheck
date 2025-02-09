@@ -8,21 +8,21 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
 </head>
-<body class="bg-gradient-to-r from-blue-50 to-blue-100 text-gray-900 relative">
-    <div class="absolute inset-0 bg-gradient-to-br from-blue-100 to-blue-300 opacity-30 rounded-full blur-3xl"></div>
+<body class="bg-gradient-to-r from-blue-50 via-purple-200 to-blue-100 text-gray-900 relative">
+    <div class="absolute inset-0 bg-gradient-to-br from-blue-200 via-purple-300 to-blue-400 opacity-50 rounded-full blur-3xl"></div>
     <!-- Header -->
     <header class="bg-white shadow-md py-6 relative z-10">
         <div class="container mx-auto flex justify-between items-center px-6">
             <h1 class="text-2xl font-bold"><a href="index.html">DropCheck</a></h1>
-            <a href="#cta" class="bg-blue-600 hover:bg-blue-700 text-white py-3 px-5 rounded-lg text-lg font-semibold">
-                🚀 Reduce Cancelaciones HOY
+            <a href="#cta" class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg text-md font-semibold">
+                🚀 Regístrate Ahora
             </a>
         </div>
     </header>
 
     <!-- Hero Section -->
     <section class="text-center py-20 px-6 relative z-10">
-        <h2 class="text-5xl font-extrabold">Valida Pedidos en Segundos, Maximiza tu Rentabilidad</h2>
+        <h2 class="text-4xl font-semibold">Valida Pedidos en Segundos, Maximiza tu Rentabilidad</h2>
         <p class="text-xl mt-4 text-gray-700">La herramienta N°1 para reducir cancelaciones y optimizar tu negocio de dropshipping.</p>
         <a href="pricing.html" class="mt-6 inline-block bg-blue-600 hover:bg-blue-700 text-white py-4 px-8 rounded-lg text-xl font-bold shadow-lg">
             🔥 Ver Planes y Precios
@@ -45,7 +45,7 @@
                 </div>
                 <div class="swiper-slide bg-gray-100 p-6 rounded-lg shadow-md flex flex-col items-center">
                     <div class="flex items-center space-x-3">
-                        <img src="foto_perfil_pili.jpg" alt="María G." class="w-10 h-10 rounded-full">
+                        <img src="image.png" alt="María G." class="w-10 h-10 rounded-full">
                         <p class="font-bold">María G.</p>
                     </div>
                     <div class="text-yellow-400 text-lg">★★★★★</div>
@@ -66,17 +66,29 @@
 
     <script>
         var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 1,
-            spaceBetween: 10,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-            },
-        });
+    slidesPerView: 1,
+    spaceBetween: 10,
+    breakpoints: {
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 20
+        },
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: 30
+        }
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    loop: true
+});
+
     </script>
 
     <!-- CTA -->
