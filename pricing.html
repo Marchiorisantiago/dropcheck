@@ -3,95 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DropCheck - Reduce Cancelaciones y Maximiza Ganancias</title>
+    <title>DropCheck - Planes y Precios</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
 </head>
-<body class="bg-gradient-to-r from-blue-50 to-blue-100 text-gray-900 relative">
+<body class="bg-gradient-to-r from-blue-50 to-blue-200 text-gray-900 relative">
     <div class="absolute inset-0 bg-gradient-to-br from-blue-100 to-blue-300 opacity-30 rounded-full blur-3xl"></div>
-    
-    <!-- Header -->
     <header class="bg-white shadow-md py-6 relative z-10">
         <div class="container mx-auto flex justify-between items-center px-6">
             <h1 class="text-2xl font-bold">DropCheck</h1>
-            <a href="#cta" class="bg-blue-600 hover:bg-blue-700 text-white py-3 px-5 rounded-lg text-lg font-semibold">
-                🚀 Reduce Cancelaciones HOY
-            </a>
+            <a href="index.html" class="bg-blue-600 text-white py-2 px-4 rounded-lg">Volver a Inicio</a>
         </div>
     </header>
-
-    <!-- Hero Section -->
-    <section class="text-center py-20 px-6 relative z-10">
-        <h2 class="text-5xl font-extrabold">Valida Pedidos en Segundos, Maximiza tu Rentabilidad</h2>
-        <p class="text-xl mt-4 text-gray-700">La herramienta N°1 para reducir cancelaciones y optimizar tu negocio de dropshipping.</p>
-        <a href="pricing.html" class="mt-6 inline-block bg-blue-600 hover:bg-blue-700 text-white py-4 px-8 rounded-lg text-xl font-bold shadow-lg">
-            🔥 Ver Planes y Precios
-        </a>
+    
+    <section class="text-center py-12 relative z-10">
+        <h2 class="text-4xl font-bold">Elige tu plan ideal</h2>
+        <p class="text-lg mt-4 text-gray-700">Optimiza la validación de tus pedidos y reduce cancelaciones</p>
     </section>
-
-    <!-- Reviews Carousel -->
-    <section class="bg-white py-12 text-center relative z-10">
-        <h3 class="text-3xl font-bold">Confían en Nosotros</h3>
-        <p class="mt-2 text-gray-600">Más de 1,000 dropshippers ya optimizan sus pedidos con DropCheck</p>
-        <div class="swiper mySwiper mt-8">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide bg-gray-100 p-6 rounded-lg shadow-md flex flex-col items-center">
-                    <div class="flex items-center space-x-3">
-                        <img src="profile1.jpg" alt="Juan M." class="w-10 h-10 rounded-full">
-                        <p class="font-bold">Juan M.</p>
-                    </div>
-                    <div class="text-yellow-400 text-lg">★★★★★</div>
-                    <p class="text-gray-700 italic mt-2">"DropCheck redujo mis cancelaciones en un 40%. Un cambio total."</p>
-                </div>
-                <div class="swiper-slide bg-gray-100 p-6 rounded-lg shadow-md flex flex-col items-center">
-                    <div class="flex items-center space-x-3">
-                        <img src="profile2.jpg" alt="María G." class="w-10 h-10 rounded-full">
-                        <p class="font-bold">María G.</p>
-                    </div>
-                    <div class="text-yellow-400 text-lg">★★★★★</div>
-                    <p class="text-gray-700 italic mt-2">"Antes pasaba horas revisando pedidos. Ahora todo es automático."</p>
-                </div>
-                <div class="swiper-slide bg-gray-100 p-6 rounded-lg shadow-md flex flex-col items-center">
-                    <div class="flex items-center space-x-3">
-                        <img src="profile3.jpg" alt="Luis F." class="w-10 h-10 rounded-full">
-                        <p class="font-bold">Luis F.</p>
-                    </div>
-                    <div class="text-yellow-400 text-lg">★★★★★</div>
-                    <p class="text-gray-700 italic mt-2">"El mejor software para dropshippers que he probado. Fácil y rápido."</p>
-                </div>
-            </div>
-            <div class="swiper-pagination mt-4"></div>
+    
+    <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-6 relative z-10">
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+            <h3 class="text-2xl font-bold">Básico</h3>
+            <p class="text-3xl font-bold mt-2">USD 12.99/m</p>
+            <p class="text-gray-600">Facturado cada mes</p>
+            <ul class="mt-4 text-left list-disc pl-6">
+                <li>✅ Validación automática de pedidos</li>
+                <li>✅ Reportes básicos</li>
+                <li>✅ Soporte por email</li>
+            </ul>
+            <a href="#" class="mt-6 block bg-blue-600 text-white py-3 px-6 rounded-lg text-lg font-bold">Consigue el Plan Básico</a>
         </div>
-    </section>
-
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 1,
-            spaceBetween: 10,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-            },
-        });
-    </script>
-
-    <!-- CTA -->
-    <section id="cta" class="bg-blue-600 text-white text-center py-12 relative z-10">
-        <h3 class="text-3xl font-bold">Optimiza tu Rentabilidad Hoy</h3>
-        <p class="mt-2 text-lg">Prueba DropCheck gratis y aumenta tu tasa de éxito desde el primer día.</p>
-        <a href="pricing.html" class="mt-6 inline-block bg-white text-blue-600 py-4 px-8 rounded-lg text-xl font-bold shadow-lg">
-            🚀 Ver Planes y Precios
-        </a>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white text-center py-6 relative z-10">
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+            <h3 class="text-2xl font-bold">Plus</h3>
+            <p class="text-3xl font-bold mt-2">USD 13.99/m</p>
+            <p class="text-gray-600">Facturado cada mes</p>
+            <ul class="mt-4 text-left list-disc pl-6">
+                <li>✅ Todo en el plan Básico</li>
+                <li>✅ Reportes avanzados</li>
+                <li>✅ Integración con Shopify</li>
+            </ul>
+            <a href="#" class="mt-6 block bg-blue-600 text-white py-3 px-6 rounded-lg text-lg font-bold">Consigue el Plan Plus</a>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md text-center border-2 border-blue-600">
+            <h3 class="text-2xl font-bold text-blue-600">Más Popular</h3>
+            <h3 class="text-2xl font-bold">Completo</h3>
+            <p class="text-3xl font-bold mt-2">USD 14.99/m</p>
+            <p class="text-gray-600">Facturado cada mes</p>
+            <ul class="mt-4 text-left list-disc pl-6">
+                <li>✅ Todo en el plan Plus</li>
+                <li>✅ Protección avanzada contra fraudes</li>
+                <li>✅ Soporte 24/7</li>
+            </ul>
+            <a href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c93808494d5e4f10194e85e5ea309f6" class="mt-6 block bg-blue-600 text-white py-3 px-6 rounded-lg text-lg font-bold">Consigue el Plan Completo</a>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+            <h3 class="text-2xl font-bold">Prime</h3>
+            <p class="text-3xl font-bold mt-2">USD 17.99/m</p>
+            <p class="text-gray-600">Facturado cada mes</p>
+            <ul class="mt-4 text-left list-disc pl-6">
+                <li>✅ Todo en el plan Completo</li>
+                <li>✅ API personalizada</li>
+                <li>✅ Soporte prioritario</li>
+            </ul>
+            <a href="#" class="mt-6 block bg-blue-600 text-white py-3 px-6 rounded-lg text-lg font-bold">Consigue el Plan Prime</a>
+        </div>
+    </div>
+    
+    <footer class="bg-gray-800 text-white text-center py-6 mt-12 relative z-10">
         <p>© 2025 DropCheck. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
+
